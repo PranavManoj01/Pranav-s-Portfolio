@@ -1,4 +1,4 @@
-﻿const projects = [
+const projects = [
   {
     title: "Semantic Steganography",
     subtitle: "Research · Design Phase",

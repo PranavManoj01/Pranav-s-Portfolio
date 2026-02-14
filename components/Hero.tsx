@@ -1,4 +1,4 @@
-﻿const navItems = [
+const navItems = [
   { label: "Journey", href: "#journey" },
   { label: "Projects", href: "#projects" },
   { label: "Stack", href: "#stack" },

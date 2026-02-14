@@ -1,4 +1,4 @@
-﻿import { Hero } from "@/components/Hero";
+import { Hero } from "@/components/Hero";
 import { Typewriter } from "@/components/Typewriter";
 import { BentoGrid } from "@/components/BentoGrid";
 import { BookCard } from "@/components/BookCard";
