@@ -1,0 +1,26 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+  background-image: radial-gradient(circle at 1px 1px, rgb(39 39 42 / 0.45) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+::selection {
+  @apply bg-zinc-700 text-zinc-100;
+}
+
+.container-shell {
+  @apply mx-auto max-w-6xl px-6 py-12 md:px-10;
+}
