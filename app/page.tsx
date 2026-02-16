@@ -68,33 +68,6 @@ export default function HomePage() {
       </SectionReveal>
 
       <SectionReveal>
-        <section id="journey" className="space-y-6 border-t border-zinc-800 pt-9">
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-            Product Journey
-          </h2>
-          <div className="space-y-5 text-zinc-300">
-            <p>
-              I started by exploring how meaning itself can hide information. That led to my
-              <span className="text-zinc-100"> Semantic Steganography Research</span> design phase,
-              where I mapped pathways for concealing signals across plain text and executable-level
-              structures.
-            </p>
-            <p>
-              Next came a practical build for people around me: a
-              <span className="text-zinc-100"> LeetCode Progress Tracker</span> built for a group of
-              friends to make consistency visible and measurable.
-            </p>
-            <p>
-              Most recently, I worked on a
-              <span className="text-zinc-100"> Mood Predictor ML</span> system using Random Forest and
-              Logistic Regression on categorical data, translating noisy behavior patterns into
-              usable predictions.
-            </p>
-          </div>
-        </section>
-      </SectionReveal>
-
-      <SectionReveal>
         <section id="projects" className="space-y-6 border-t border-zinc-800 pt-9">
           <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Selected Work</h2>
           <BentoGrid />
@@ -121,16 +94,6 @@ export default function HomePage() {
           <p className="text-sm text-zinc-400">
             Skill focus: <span className="text-zinc-200">C++ (Competitive Programming), Python, Post-Quantum Cryptography</span>
           </p>
-        </section>
-      </SectionReveal>
-
-      <SectionReveal>
-        <section id="library" className="space-y-6 border-t border-zinc-800 pt-9">
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Library</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <BookCard title="Technical" books={books.technical} />
-            <BookCard title="Casual" books={books.casual} />
-          </div>
         </section>
       </SectionReveal>
 
@@ -170,6 +133,43 @@ export default function HomePage() {
               </p>
             </div>
           </article>
+        </section>
+      </SectionReveal>
+
+      <SectionReveal>
+        <section id="library" className="space-y-6 border-t border-zinc-800 pt-9">
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Library</h2>
+          <div className="grid gap-8 md:grid-cols-2">
+            <BookCard title="Technical" books={books.technical} />
+            <BookCard title="Casual" books={books.casual} />
+          </div>
+        </section>
+      </SectionReveal>
+
+      <SectionReveal>
+        <section id="journey" className="space-y-6 border-t border-zinc-800 pt-9">
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+            Product Journey
+          </h2>
+          <div className="space-y-5 text-zinc-300">
+            <p>
+              I started by exploring how meaning itself can hide information. That led to my
+              <span className="text-zinc-100"> Semantic Steganography Research</span> design phase,
+              where I mapped pathways for concealing signals across plain text and executable-level
+              structures.
+            </p>
+            <p>
+              Next came a practical build for people around me: a
+              <span className="text-zinc-100"> LeetCode Progress Tracker</span> built for a group of
+              friends to make consistency visible and measurable.
+            </p>
+            <p>
+              Most recently, I worked on a
+              <span className="text-zinc-100"> Mood Predictor ML</span> system using Random Forest and
+              Logistic Regression on categorical data, translating noisy behavior patterns into
+              usable predictions.
+            </p>
+          </div>
         </section>
       </SectionReveal>
     </main>
