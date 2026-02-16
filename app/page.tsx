@@ -4,6 +4,7 @@ import { BentoGrid } from "@/components/BentoGrid";
 import { BookCard } from "@/components/BookCard";
 import { SectionReveal } from "@/components/SectionReveal";
 import { Badge } from "@/components/ui/badge";
+import { SocialDock } from "@/components/SocialDock";
 
 const techStack = {
   Languages: ["C++", "Python", "TypeScript", "SQL"],
@@ -49,7 +50,7 @@ const books = {
 
 export default function HomePage() {
   return (
-    <main className="container-shell space-y-16 md:space-y-24">
+    <main className="container-shell space-y-16 pb-28 md:space-y-24 md:pb-32">
       <Hero />
 
       <SectionReveal>
@@ -172,6 +173,8 @@ export default function HomePage() {
           </div>
         </section>
       </SectionReveal>
+
+      <SocialDock />
     </main>
   );
 }
