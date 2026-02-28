@@ -29,39 +29,41 @@ export function Hero() {
         </ul>
       </nav>
 
-      <div className="space-y-6">
-        <div className="mb-4 flex items-center gap-6">
+      <div className="flex flex-col gap-8 md:flex-row md:items-center">
+        <div className="flex flex-col gap-8 md:justify-center">
           <Image
             src="/assets/branding/lockheed-martin.png"
             alt="Lockheed Martin"
-            width={180}
-            height={32}
+            width={320}
+            height={96}
             priority
-            className="h-6 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-8"
+            className="h-16 w-auto object-contain grayscale invert brightness-200 opacity-80 transition-opacity hover:opacity-100 md:h-24"
           />
           <Image
             src="/assets/branding/skunk-works.png"
             alt="Skunk Works"
-            width={180}
-            height={32}
+            width={320}
+            height={96}
             priority
-            className="h-6 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-8"
+            className="h-16 w-auto object-contain grayscale invert brightness-200 opacity-80 transition-opacity hover:opacity-100 md:h-24"
           />
         </div>
 
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
-          Lo-fi mode | IST {time}
-        </p>
-        <h1 className="max-w-4xl text-4xl font-medium leading-tight tracking-tight text-zinc-100 md:text-6xl">
-          Pranav Manoj
-          <span className="mt-2 block text-lg text-zinc-500 md:text-2xl">
-            Avid Researcher and Spatial Computing fanatic
-          </span>
-        </h1>
-        <p className="max-w-3xl text-balance text-lg text-zinc-300 md:text-xl">
-          Focused on building reliable systems at the intersection of algorithms,
-          machine learning, and security research.
-        </p>
+        <div className="space-y-6 md:ml-12">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
+            Lo-fi mode | IST {time}
+          </p>
+          <h1 className="max-w-4xl text-4xl font-medium leading-tight tracking-tight text-zinc-100 md:text-6xl">
+            Pranav Manoj
+            <span className="mt-2 block text-lg text-zinc-500 md:text-2xl">
+              Avid Researcher and Spatial Computing fanatic
+            </span>
+          </h1>
+          <p className="max-w-3xl text-balance text-lg text-zinc-300 md:text-xl">
+            Focused on building reliable systems at the intersection of algorithms,
+            machine learning, and security research.
+          </p>
+        </div>
       </div>
     </header>
   );
