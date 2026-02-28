@@ -29,15 +29,15 @@ export function Hero() {
         </ul>
       </nav>
 
-      <div className="flex flex-col gap-8 md:flex-row md:items-center">
-        <div className="flex flex-col gap-8 md:justify-center">
+      <div className="relative flex flex-col gap-8 md:min-h-[18rem]">
+        <div className="flex flex-col gap-8 md:absolute md:left-0 md:top-0">
           <Image
             src="/assets/branding/lockheed-martin.png"
             alt="Lockheed Martin"
             width={320}
             height={96}
             priority
-            className="h-16 w-auto object-contain grayscale invert brightness-200 opacity-80 transition-opacity hover:opacity-100 md:h-24"
+            className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-24"
           />
           <Image
             src="/assets/branding/skunk-works.png"
@@ -45,11 +45,11 @@ export function Hero() {
             width={320}
             height={96}
             priority
-            className="h-16 w-auto object-contain grayscale invert brightness-200 opacity-80 transition-opacity hover:opacity-100 md:h-24"
+            className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-24"
           />
         </div>
 
-        <div className="space-y-6 md:ml-12">
+        <div className="space-y-6 md:ml-[22rem]">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
             Lo-fi mode | IST {time}
           </p>
