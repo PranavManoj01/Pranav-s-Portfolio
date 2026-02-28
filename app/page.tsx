@@ -1,6 +1,8 @@
 import { Hero } from "@/components/Hero";
 import { Typewriter } from "@/components/Typewriter";
 import { BentoGrid } from "@/components/BentoGrid";
+import { ExperienceEducation } from "@/components/ExperienceEducation";
+import { ResearchPublications } from "@/components/ResearchPublications";
 import { SectionReveal } from "@/components/SectionReveal";
 import { Badge } from "@/components/ui/badge";
 import { SocialDock } from "@/components/SocialDock";
@@ -68,42 +70,11 @@ export default function HomePage() {
       </SectionReveal>
 
       <SectionReveal>
-        <section id="research" className="space-y-6 border-t border-zinc-800 pt-9">
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-            Research Publications
-          </h2>
-          <article className="space-y-4 border border-zinc-800 p-5 md:p-6">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
-              Featured Research Project
-            </p>
-            <h3 className="text-xl font-semibold tracking-tight text-zinc-100 md:text-2xl">
-              Future Proofing Financial AI : A decentralized approach to Quantum-Resistant
-              Federated Learning
-            </h3>
-            <div className="space-y-4 text-zinc-300">
-              <p>
-                This work assessed a vulnerability in AI adoption within financial institutions,
-                where conventional Credit Risk Modelling often relies on vulnerable centralized
-                learning systems. We addressed this by implementing a federated learning
-                environment using flwr and proposing a communication encryption layer based on
-                PQC algorithms.
-              </p>
-              <p>
-                We then addressed feasibility concerns around transmission overhead caused by large
-                ciphertext-to-plaintext conversions and key encapsulation latency. The system used
-                asymmetric encapsulation with lattice-based KEMs for secure key exchange and
-                symmetric-key DEMs for bulk encryption of model gradients.
-              </p>
-              <p>
-                Experimental results in a flwr-based decentralized setup showed a 7% reduction in
-                total communication volume per aggregation round versus standard symmetric PQC
-                implementations. An adaptive signature strategy, using Falcon 512 for clients with
-                larger data contributions, balanced security and network efficiency while reducing
-                communication burden on high-impact nodes.
-              </p>
-            </div>
-          </article>
-        </section>
+        <ExperienceEducation />
+      </SectionReveal>
+
+      <SectionReveal>
+        <ResearchPublications />
       </SectionReveal>
 
       <SectionReveal>

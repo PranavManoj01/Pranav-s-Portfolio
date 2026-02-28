@@ -5,7 +5,7 @@ const projects = [
     description:
       "Exploring semantic hiding strategies across text and executable representations, with emphasis on preserving meaning while embedding signals.",
     tags: ["Security Research", "Text", "Executables"],
-    span: "md:col-span-8",
+    span: "col-span-8",
   },
   {
     title: "PQC-FL Secure Exchange Layer",
@@ -13,7 +13,7 @@ const projects = [
     description:
       "Built a post-quantum key exchange and encryption workflow for federated learning clients using lattice-based KEM and symmetric DEM for gradient payload protection.",
     tags: ["Post-Quantum Cryptography", "Federated Learning", "Kyber KEM"],
-    span: "md:col-span-4",
+    span: "col-span-4",
   },
   {
     title: "Interactive AR Art Exhibition",
@@ -21,17 +21,17 @@ const projects = [
     description:
       "Developed an interactive augmented reality art exhibition using Google's ARCore, combining markerless tracking, anchored scene placement, and gesture-driven interactions for immersive storytelling.",
     tags: ["ARCore", "Spatial Computing", "Interactive AR"],
-    span: "md:col-span-12",
+    span: "col-span-12",
   },
 ];
 
 export function BentoGrid() {
   return (
-    <div className="grid gap-4 md:grid-cols-12">
+    <div className="grid grid-cols-12 gap-4">
       {projects.map((project) => (
         <article
           key={project.title}
-          className={`group relative aspect-video overflow-hidden border border-zinc-800 bg-zinc-950/60 p-5 transition-colors hover:border-zinc-600 ${project.span}`}
+          className={`group relative h-full min-h-[280px] overflow-hidden border border-zinc-800 bg-zinc-950/60 p-5 transition-colors hover:border-zinc-600 ${project.span}`}
         >
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-500">
             {project.subtitle}
