@@ -2,7 +2,6 @@ const navItems = [
   { label: "Journey", href: "#journey" },
   { label: "Projects", href: "#projects" },
   { label: "Stack", href: "#stack" },
-  { label: "Library", href: "#library" },
 ];
 
 export function Hero() {
@@ -46,4 +45,3 @@ export function Hero() {
     </header>
   );
 }
-

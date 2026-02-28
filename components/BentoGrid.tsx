@@ -1,26 +1,26 @@
 const projects = [
   {
     title: "Semantic Steganography",
-    subtitle: "Research · Design Phase",
+    subtitle: "Research - Design Phase",
     description:
       "Exploring semantic hiding strategies across text and executable representations, with emphasis on preserving meaning while embedding signals.",
     tags: ["Security Research", "Text", "Executables"],
     span: "md:col-span-8",
   },
   {
-    title: "LeetCode Progress Tracker",
-    subtitle: "Product Build",
+    title: "PQC-FL Secure Exchange Layer",
+    subtitle: "Research Engineering",
     description:
-      "Built for a group of friends to track daily solves, identify consistency trends, and compare momentum over time.",
-    tags: ["Community Tool", "Analytics", "Python"],
+      "Built a post-quantum key exchange and encryption workflow for federated learning clients using lattice-based KEM and symmetric DEM for gradient payload protection.",
+    tags: ["Post-Quantum Cryptography", "Federated Learning", "Kyber KEM"],
     span: "md:col-span-4",
   },
   {
-    title: "Mood Predictor ML",
-    subtitle: "Applied Machine Learning",
+    title: "Interactive AR Art Exhibition",
+    subtitle: "Spatial Computing Build",
     description:
-      "Implemented Random Forest and Logistic Regression on categorical data to model mood outcomes and evaluate practical classifier tradeoffs.",
-    tags: ["Random Forest", "Logistic Regression", "Categorical Data"],
+      "Developed an interactive augmented reality art exhibition using Google's ARCore, combining markerless tracking, anchored scene placement, and gesture-driven interactions for immersive storytelling.",
+    tags: ["ARCore", "Spatial Computing", "Interactive AR"],
     span: "md:col-span-12",
   },
 ];

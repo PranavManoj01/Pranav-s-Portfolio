@@ -1,7 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Typewriter } from "@/components/Typewriter";
 import { BentoGrid } from "@/components/BentoGrid";
-import { BookCard } from "@/components/BookCard";
 import { SectionReveal } from "@/components/SectionReveal";
 import { Badge } from "@/components/ui/badge";
 import { SocialDock } from "@/components/SocialDock";
@@ -15,37 +14,7 @@ const techStack = {
     "Feature Engineering",
   ],
   Infrastructure: ["Git", "Linux", "Docker", "Netlify", "Next.js"],
-};
-
-const books = {
-  technical: [
-    {
-      title: "Designing Data-Intensive Applications",
-      author: "Martin Kleppmann",
-    },
-    {
-      title: "Computer Systems: A Programmer's Perspective",
-      author: "Randal E. Bryant, David R. O'Hallaron",
-    },
-    {
-      title: "The Pragmatic Programmer",
-      author: "Andrew Hunt, David Thomas",
-    },
-  ],
-  casual: [
-    {
-      title: "Atomic Habits",
-      author: "James Clear",
-    },
-    {
-      title: "The Almanack of Naval Ravikant",
-      author: "Eric Jorgenson",
-    },
-    {
-      title: "The Psychology of Money",
-      author: "Morgan Housel",
-    },
-  ],
+  "Spatial Computing": ["Unity", "ARCore"],
 };
 
 export default function HomePage() {
@@ -138,16 +107,6 @@ export default function HomePage() {
       </SectionReveal>
 
       <SectionReveal>
-        <section id="library" className="space-y-6 border-t border-zinc-800 pt-9">
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Library</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <BookCard title="Technical" books={books.technical} />
-            <BookCard title="Casual" books={books.casual} />
-          </div>
-        </section>
-      </SectionReveal>
-
-      <SectionReveal>
         <section id="journey" className="space-y-6 border-t border-zinc-800 pt-9">
           <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
             Product Journey
@@ -160,15 +119,16 @@ export default function HomePage() {
               structures.
             </p>
             <p>
-              Next came a practical build for people around me: a
-              <span className="text-zinc-100"> LeetCode Progress Tracker</span> built for a group of
-              friends to make consistency visible and measurable.
+              Next came cryptography systems work through a
+              <span className="text-zinc-100"> PQC-FL Secure Exchange Layer</span>, where I designed
+              lattice-based key encapsulation with hybrid encryption to secure model updates in
+              decentralized training.
             </p>
             <p>
-              Most recently, I worked on a
-              <span className="text-zinc-100"> Mood Predictor ML</span> system using Random Forest and
-              Logistic Regression on categorical data, translating noisy behavior patterns into
-              usable predictions.
+              Most recently, I built an
+              <span className="text-zinc-100"> Interactive AR Art Exhibition</span> using Google
+              ARCore, combining spatial anchors, markerless tracking, and interactive scene design
+              to create an immersive gallery experience.
             </p>
           </div>
         </section>
