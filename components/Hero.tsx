@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navItems = [
   { label: "Journey", href: "#journey" },
   { label: "Projects", href: "#projects" },
@@ -15,17 +17,7 @@ export function Hero() {
   return (
     <header className="space-y-12">
       <nav className="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-5">
-        <div className="flex items-center gap-3">
-          <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-500">PM</p>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Skunkworks-logo.jpg"
-            alt="Skunk Works easter egg"
-            title="Skunkworks"
-            className="h-4 w-4 rounded-sm border border-zinc-800 object-cover opacity-25 transition hover:opacity-100"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
+        <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-500">PM</p>
         <ul className="flex flex-wrap items-center gap-4 text-sm text-zinc-400">
           {navItems.map((item) => (
             <li key={item.href}>
@@ -38,6 +30,25 @@ export function Hero() {
       </nav>
 
       <div className="space-y-6">
+        <div className="mb-4 flex items-center gap-6">
+          <Image
+            src="/assets/branding/lockheed-martin.png"
+            alt="Lockheed Martin"
+            width={180}
+            height={32}
+            priority
+            className="h-6 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-8"
+          />
+          <Image
+            src="/assets/branding/skunk-works.png"
+            alt="Skunk Works"
+            width={180}
+            height={32}
+            priority
+            className="h-6 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-8"
+          />
+        </div>
+
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
           Lo-fi mode | IST {time}
         </p>
