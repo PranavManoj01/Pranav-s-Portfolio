@@ -34,10 +34,12 @@ export function Hero() {
         </p>
         <h1 className="max-w-4xl text-4xl font-medium leading-tight tracking-tight text-zinc-100 md:text-6xl">
           Pranav Manoj
-          <span className="mt-2 block text-lg text-zinc-500 md:text-2xl">P-R-A-N-A-V M-A-N-O-J</span>
+          <span className="mt-2 block text-lg text-zinc-500 md:text-2xl">
+            Avid Researcher and Spatial Computing fanatic
+          </span>
         </h1>
         <p className="max-w-3xl text-balance text-lg text-zinc-300 md:text-xl">
-          A developer focused on building reliable systems at the intersection of algorithms,
+          Focused on building reliable systems at the intersection of algorithms,
           machine learning, and security research.
         </p>
       </div>
