@@ -10,10 +10,12 @@ import { SocialDock } from "@/components/SocialDock";
 const techStack = {
   Languages: ["C++", "Python", "TypeScript", "SQL"],
   "AI / ML": [
-    "Random Forest",
-    "Logistic Regression",
-    "Scikit-learn",
-    "Feature Engineering",
+    "Generative AI",
+    "3D Generative Modeling",
+    "Real-Time Inference",
+    "Neural Rendering",
+    "Multimodal Embeddings",
+    "Scene Understanding",
   ],
   Infrastructure: ["Git", "Linux", "Docker", "Netlify", "Next.js"],
   "Spatial Computing": ["Unity", "ARCore"],

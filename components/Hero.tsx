@@ -15,7 +15,17 @@ export function Hero() {
   return (
     <header className="space-y-12">
       <nav className="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-5">
-        <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-500">PM</p>
+        <div className="flex items-center gap-3">
+          <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-500">PM</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Skunkworks-logo.jpg"
+            alt="Skunk Works easter egg"
+            title="Skunkworks"
+            className="h-4 w-4 rounded-sm border border-zinc-800 object-cover opacity-25 transition hover:opacity-100"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
         <ul className="flex flex-wrap items-center gap-4 text-sm text-zinc-400">
           {navItems.map((item) => (
             <li key={item.href}>
