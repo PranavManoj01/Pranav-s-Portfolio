@@ -15,7 +15,7 @@ export function Hero() {
   }).format(new Date());
 
   return (
-    <header className="space-y-12">
+    <header className="relative w-full space-y-12">
       <nav className="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-5">
         <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-500">PM</p>
         <ul className="flex flex-wrap items-center gap-4 text-sm text-zinc-400">
@@ -29,27 +29,27 @@ export function Hero() {
         </ul>
       </nav>
 
-      <div className="relative flex flex-col gap-8 md:min-h-[18rem]">
-        <div className="flex flex-col gap-8 md:absolute md:left-0 md:top-0">
+      <div className="flex flex-col gap-8 xl:min-h-[22rem]">
+        <div className="flex flex-col gap-12 xl:absolute xl:left-0 xl:top-1/2 xl:-translate-y-1/2 xl:pl-8 2xl:pl-12">
           <Image
             src="/assets/branding/lockheed-martin.png"
             alt="Lockheed Martin"
-            width={320}
-            height={96}
+            width={420}
+            height={128}
             priority
-            className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-24"
+            className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-24 xl:h-28"
           />
           <Image
             src="/assets/branding/skunk-works.png"
             alt="Skunk Works"
-            width={320}
-            height={96}
+            width={420}
+            height={128}
             priority
-            className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-24"
+            className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-24 xl:h-28"
           />
         </div>
 
-        <div className="space-y-6 md:ml-[22rem]">
+        <div className="space-y-6 xl:ml-[32rem]">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
             Lo-fi mode | IST {time}
           </p>
